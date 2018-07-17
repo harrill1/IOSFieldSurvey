@@ -28,7 +28,7 @@ class ObservationDetailViewController: UIViewController {
         
         observationImageView.image = observation?.classification.image
         titleLabel.text = observation?.title
-        descriptionLabel.text = observation?.title
+        descriptionLabel.text = observation?.description
         
         if let date = observation?.date {
             dateLabel.text = dateFormatter.string(from: date)
